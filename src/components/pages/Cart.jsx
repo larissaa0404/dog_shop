@@ -32,8 +32,8 @@ export default function Cart() {
                     })}
                 </ul>
                 <h2><span>Total:</span> ${totalAmount}</h2>
-                <button className="continueBtn" onClick={() => navigate('/')}>Continue Shopping</button>
-                <button className="checkoutBtn" onClick={() => navigate('/login')}>Checkout</button>
+                <button className="continueBtn" onClick={() => navigate('dog_shop/')}>Continue Shopping</button>
+                <button className="checkoutBtn" onClick={() => navigate('dog_shop/login')}>Checkout</button>
         </div>
     </>
   );
