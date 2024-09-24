@@ -12,7 +12,7 @@ export default function Header() {
     const handleLogout = () => {
         alert("Logout succesfully!");
         window.localStorage.removeItem("isLogedin");
-        navigate('/');
+        navigate('dog_shop/');
     }
 
     return (
