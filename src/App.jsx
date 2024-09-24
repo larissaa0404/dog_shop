@@ -18,12 +18,12 @@ function App() {
       <ShopContextProvider> 
          <Header /> 
          <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/about" element={<About />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/cart" element={<Cart />}/>
-            <Route path="/register" element={<Register />}/>
-            <Route path="/logout" element={<Logout />}/>
+            <Route path="dog_shop/" element={<Home />}/>
+            <Route path="dog_shop/about" element={<About />} />
+            <Route path="dog_shop/login" element={<Login />} />
+            <Route path="dog_shop/cart" element={<Cart />}/>
+            <Route path="dog_shop/register" element={<Register />}/>
+            <Route path="dog_shop/logout" element={<Logout />}/>
          </Routes>
          <Footer />
       </ShopContextProvider>    
