@@ -1,38 +1,796 @@
 .App {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
   text-align: center;
+  background-color: rgb(133, 182, 255);
+  background-size: cover;
+}
+.container{
+  margin: 0;
+  width: 100%;
+  color: rgb(64, 64, 185);
+  padding: 1rem;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  padding-right: 3rem;
+  box-shadow: 0px 0px 3rem 0px #a04fcf ;
+}
+.justify-content-md-between{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.px-3 {
+  padding-left: .4rem;
+}
+.text-decoration-none{
+  text-decoration: none;
+  color: #a04fcf;
+  font-weight: 500;
+}
+.align-items-center{
+  align-items: center !important;
+}
+.nav{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  padding-left: 30%;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center !important;
+
+}
+.nav-item{
+  padding-left: 6rem;
+  justify-content: center;
+}
+.nav-link{
+  text-decoration: none;
+}
+ul > li {
+  list-style: none;
+}
+/* body */
+.container-grid {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homePage {
+  order: 2;
+  width: 25rem;
+  height: 35rem;
+  margin-top: 5%;
+  margin-left: 7%;
+  border-radius: 50%;
+  box-shadow: 1.5rem .3rem 1.5rem rgb(200, 241, 122), .3rem 1.5rem .3rem rgb(82, 82, 175) ;
+  padding-left: 3%;
+}
+.homePage >h1 {
+  position: relative;
+  font-size: 10rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #885da1; 
+  text-shadow: 0px .75rem 0px #d49090;
+}
+.runDog{
+  order: 4;
+  margin-top: 4%;
+  padding-right: 5%;
+  margin-left: 13%;
+  margin-right: 5%;
+}
+.runDog > img {
+  width: 18rem;
+  height: 33rem;
+}
+.cardDog {
+  background-color: rgb(20, 20, 116);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20rem;
+  height: 31rem;
+  padding-left: 5%;
+  margin-right: 9%;
+  margin-top: 5%;
+  padding-top: 100px;
+}
+.dog {
+  align-items: center;
+  width: 22rem;
+  height: 35rem;
+  padding-left: 5%;
+}
+/* product items */
+.mainButtons{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 8rem;
+  justify-content: center; 
+}
+.mainButtons > button{
+  width: 15rem;
+  height: 5rem;
+  font-size: 3rem;
+  color:  rgb(64, 64, 185);
+  background-color: transparent;
+  box-shadow: 0px 0px 3rem 0px #a04fcf;
+  margin-left: 5%;
+  border: none;
+  justify-content: center;
+}
+.mainButtons > button:hover {
+  opacity: 0.7;
+}
+.album {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  grid-auto-rows: minmax(10rem, 33rem);
+  column-gap: 10%;
+  row-gap: 15%;
+  margin-top: 7%;
+  justify-content: center;
+  margin-bottom: 18%;
+  margin-left: 3%;
+}
+.picture {
+  width: 100px;
+  height: 150px;
+}
+.picture:hover {
+   opacity: 0.8;  
+}
+.item > h2 {
+  font-size: 1.2rem;
+  text-align: start;
+}
+.item > button {
+  width: 50%;
+  height: auto;
+  padding: .75rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(248, 176, 41);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e43838;
+}
+.item > button:hover {
+  opacity: 0.9;
+  background-color: gold;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  clear: both;
+  line-height: 1.25;
+  box-shadow: 0px 0px 3rem 0px #a04fcf ;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  color: #a04fcf;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* about page */
+.about {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content:center;
+}
+.container-flex {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.aboutCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color:  rgb(64, 64, 185);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 5px 15px 15px 10px #da7171;
+  width: 40rem;
+  height: auto;
+  margin: 12rem 20% 8rem  45%;
+}
+.aboutCard h1 {
+  font-size: 2.5rem;
+  padding-top: .7rem;
+  color: rgb(248, 176, 41);
+  padding-bottom: 3.2rem;
+  border-bottom: 1.2rem solid #da7171 ;
+}
+.aboutCard p {
+  padding: 1.4rem;
+  font-size: 1.5rem;
+  color: rgb(248, 176, 41);
+}
+.aboutImage {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  width: 30rem;
+  height: 40rem;
+  opacity: 0.9;
+  z-index: 0;
+  padding-left: 27%;
+}
+
+.list-group {
+  
+  padding: 6rem 10% 0rem 20%;
+} 
+.list-group-item {
+  border: .3rem solid #da7171;
+   background-color:  transparent;
+   width: 80%;
+   border-radius: 4rem;
+   height: auto;
+   color: #a04fcf;
+   font-size: 1.3rem;
+   padding: .7rem;
+   margin-bottom: 3rem;
+}
+
+/* login page */
+.container-fluid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 6rem;
+    margin-top: 5rem;
+}
+.thinkImage {
+  position: absolute;
+  display: flex;
+  padding-top: 3rem;
+  width: 30rem;
+  height: 40rem;
+  opacity: 0.9;
+  z-index: 0;
+  justify-content: right;
+  padding-left: 24rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.modal-content{ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 32rem;
+  pointer-events: auto;
+  background-color: #da7171;
+  color: rgb(248, 176, 41);
+  border-radius: .75rem;
+  outline: 0;
+  z-index: 999;
+  padding-top: 10px;
+  margin-top: 30%;
+}
+.modal-content h2 {
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: #beccfa;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.modal-form input{
+    border: none;
+    border-radius: .5rem;
+    background-color: bisque;
+    width: 70%;
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+    justify-content: center;
+    outline: none;
+    padding-left: .5rem;
+    font-size: 18px;
+    padding-right: .5rem;
+    margin: 1rem;
+    box-shadow: 0px 15px 0px 0px #a04fcf;
+}
+.form-floating > label {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity .1 ease-in-out, transform .1s ease-in-out;
+}
+
+.modal-form button {
+  display: inline-block;
+  line-height: 1.5;
+  width: 80%;
+  margin-top: 3rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: .2rem solid  rgb(64, 64, 185);
+  background-color: rgb(133, 182, 255);
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color:  rgb(64, 64, 185);
+  font-family:'Times New Roman', Times, serif;
+}
+.modal-form button:hover {
+  border: none;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #beccfa;
+  color: rgb(248, 176, 41);
+}
+.text-muted{
+  margin-top: .5rem;
+  display: inline-block;
+}
+
+/* register page */
+.sitImage {
+  position: absolute;
+  padding-top: 40px;
+  width: 24rem;
+  height: 40rem;
+  opacity: 0.9;
+  z-index: 0;
+  margin-left: 0rem;
+}
+.modal-content-register {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 43rem;
+  pointer-events: auto;
+  background-color: #da7171;
+  color: rgb(248, 176, 41);
+  border-radius: .75rem;
+  outline: 0;
+  z-index: 999;
+  padding-top: 10px;
+  margin-top: 33%;
+  margin-left: 6.4rem;
+}
+.modal-content-register h2 {
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: #beccfa;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* cart page */
+
+.cart {
+  margin: 7% 10%;
+  border-radius: 15px;
+}
+.cart h1 {
+  padding: 30px 50px;
+  text-align: start;
+  color: #a04fcf;
+}
+.list-group-cart{
+  padding-top: 30px;
+  background-color: #beccfa;
+  padding-bottom: 3%;
+}
+.list-group-cart > li{
+  width: 90%;
+}
+.cart h2 {
+  padding-bottom: 20px ;
+  color: #da7171;
+}
+.cart h2 span {
+  color:rgb(64, 64, 185);
+  text-transform: uppercase ;
+}
+
+.continueBtn {
+  background-color: #da7171 ;
+  color:  rgb(133, 182, 255);
+  width: 200px;
+  height: 70px;
+  border: none;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+.continueBtn:hover {
+  opacity: 0.8;
+}
+.checkoutBtn{
+  background-color: #da7171 ;
+  color:  rgb(133, 182, 255);
+  width: 200px;
+  height: 70px;
+  border: none;
+  font-size: 1.3rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+.checkoutBtn:hover {
+  opacity: 0.8;
+}
+
+ .itemCart {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  line-height: 1.25;
+  width: 90%;
+  margin: 5% auto;
+  background-color: #fdccbc;
+  border-radius: 1rem;
+  padding: 1rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ }
+.imgName{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.imgName img {
+  padding-left: 5%;
+}
+.titleCartShop {
+  color: #a04fcf;
+  font-size: 1.2rem;
+}
+.countHandle  {
+  display: flex;
+  width: 30%;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  gap: .4rem;
+  margin-left: 35%;
+  margin-right: 5%;
+}
+.countHandle input {
+  width: 50px;
+  border-radius: 50%;
+  color: #e43838;
+  background-color: #beccfa;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+.countHandle button {
+  border-radius: 50%;
+  color: #e43838;
+  background-color: #beccfa;
+  width: 50px;
+  border: none;
+  font-size: 1.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.price {
+  color: #a04fcf;
+  font-size: 1.3rem;
+  margin-left: 15%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.trashBtn {
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  padding-left: 10%;
+}
+.trash {
+  color: #e43838;
+}
+@media only screen and (max-width: 1566px){
+   .container-grid{
+    zoom: 90%
+   }
+   .container-flex{
+    zoom: 85%;
+   }
+   .aboutImage{
+    padding-left: 26%;
+   }
+}
+@media only screen and (max-width: 1387px){
+  .container-grid{
+   zoom: 83%
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 1267px){
+  .nav-item{
+    padding-left: 4rem;
+  }
+  .container-grid{
+    zoom: 75%
+   }
+  .album{
+       grid-template-columns: repeat(2, 22rem);
+       grid-auto-rows: minmax(5rem, 35rem);
+       row-gap: 10%;
+       padding-bottom: 7%;
+  }
+  .container-flex{
+    zoom: 75%;
+  }
+  .aboutImage{
+    padding-left: 24%;
+  }
+}
+@media only screen and (max-width: 1150px){
+  .container-grid{
+    zoom: 65%
+  }
+  .mainButtons > button{
+     width: 10rem;
+     height: 4rem;
+     font-size: 2.3rem;
+  }
+  .container-flex{
+    zoom: 80%;
+  }
+  .aboutImage{
+    padding-left: 20.5%;
+  }
+  .list-group{
+    zoom: 92%;
+    width: 90%;
+    padding-left: 10rem;
+  }
+  .container-fluid{
+    margin-top: 10rem;
+    zoom: 90%;
+  }
+}
+@media only screen and (max-width: 1005px){
+  .container-grid{
+   zoom: 55%
+  }
+  .container-flex{
+    zoom: 78%;
+  }
+  .aboutImage{
+    padding-left: 17.6%;
+  }
+  .list-group{
+    zoom: 87%;
+    width: 90%;
+    padding-left: 9rem;
+  }
+  .container-fluid{
+    zoom: 80%;
+    margin-top: 10rem;
+    margin-bottom: 16%;
+  }
+  .cart{
+    zoom: 75%;
+  }
+}
+
+@media only screen and (max-width: 847px){
+  .nav {
+    padding-left: 26%;
+  }
+  .container-grid{
+    zoom: 50%
+   }
+  .album{
+    grid-template-columns: repeat(2, 15rem);
+    grid-auto-rows: minmax(20rem, 20rem);
+    row-gap: 15%;
+    padding-bottom: 3%;
+  }
+  .mainPage{
+    position: relative;
+    padding-bottom: 100rem;
+  }
+  .container-flex{
+    zoom: 68%;
+  }
+  .aboutImage{
+    padding-left: 16.7%;
+  }
+  .list-group{
+    zoom: 80%;
+    width: 90%;
+    padding-left: 7rem;
+  }
+  .container-fluid{
+    margin-top: 13rem;
+    margin-bottom: 18%;
+  }
+}
+@media only screen and (max-width: 776px){
+  .nav{
+    padding-left: 25%;
+  }
+  .nav-item {
+    padding-left: .4rem;
+    margin-left: 1.5rem;
+  }
+  .container-grid{
+   zoom: 45%;
+  } 
+  .mainButtons{
+    zoom: 90%;
+  }
+  .album{
+    zoom: 90%;
+  }
+  .mainPage{
+    position: relative;
+    padding-bottom: 90rem;
+  }
+  .container-flex{
+    zoom: 64%;
+  }
+  .aboutImage{
+    padding-left: 15.7%;
+  }
+  .list-group{
+    zoom: 80%;
+    width: 90%;
+    padding-left: 6rem;
+  }
+  .container-fluid{
+    zoom: 70%;
+    margin-top: 13rem;
+    margin-bottom: 29%;
+  }
+  .cart{
+    zoom: 65%;
+  }
+}
+@media only screen and (max-width: 692px){
+  .nav-item{
+    padding-left: .5rem;
+    margin-left: 1.5rem;
+  }
+  .container-grid{
+   zoom: 40%;
+  }
+  .mainButtons{
+    zoom: 80%;
+  }
+  .album{
+    zoom: 80%;
+  }
+  .mainPage{
+    padding-bottom: 80rem;
+  }
+  .container-flex{
+    zoom: 59%;
+  }
+  .aboutImage{
+    padding-left: 14.5%;
+  }
+  .list-group{
+    zoom: 77%;
+    width: 90%;
+    padding-left: 5.5rem;
+  }
+}
+@media only screen and (max-width: 621px){
+  .container-grid{
+   zoom: 35%;
+  } 
+  .mainButtons{
+    zoom: 70%;
+  }
+  .album{
+    zoom: 70%;
+  }
+  .mainPage{
+    padding-bottom: 70rem;
+  }
+  .container-flex{
+    zoom: 55%;
+  }
+  .aboutImage{
+    padding-left: 13%;
+  }
+  .list-group{
+    zoom: 73%;
+    width: 90%;
+    padding-left: 5rem;
+  }
+  .container-fluid{
+    zoom: 60%;
+    margin-top: 13rem;
+    margin-bottom: 26rem;
+  }
+}
+@media only screen and (max-width: 554px){
+  .nav{
+    padding-left: 35%;
+  }
+  .nav-item{
+    padding-left: .2rem;
+    margin-left: .75rem;
+  }
+  .container-grid{
+   zoom: 30%;
+  } 
+  .mainButtons{
+    zoom: 65%;
+  }
+  .album{
+    zoom: 65%;
+  }
+  .container-flex{
+    zoom: 50%;
+  }
+  .aboutImage{
+    padding-left: 15.7%;
+  }
+  .aboutImage img {
+    zoom: 90%;
+  }
+  .list-group{
+    zoom: 63%;
+    width: 90%;
+    padding-left: 5rem;
+  }
+  .container-fluid{
+    zoom: 50%;
+    margin-top: 15rem;
+    margin-bottom: 34rem;
+  }
+  .cart{
+    zoom: 60%;
+  }
+}
+@media only screen and (max-width: 473px){
+  .container{
+    zoom: 83%;
+  }
+  .nav{
+    margin-left: 1rem;
+  }
+  .container-grid{
+   zoom: 25%;
+  } 
+  .mainButtons{
+    zoom: 60%;
+  }
+  .album{
+    grid-template-columns: repeat(1, 20rem);
+    grid-auto-rows: minmax(18rem, 20rem);
+    row-gap: 7%;
+    padding-bottom: 3%;
+  }
+  .mainPage{
+    position: relative;
+    padding-bottom: 110rem;
+  }
+  .container-flex{
+    zoom: 47%;
+  }
+  .aboutImage{
+    padding-left: 13%;
+  }
+  .list-group{
+    zoom: 60%;
+    width: 90%;
+    padding-left: 5rem;
   }
 }
