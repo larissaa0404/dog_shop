@@ -17,7 +17,7 @@ export default function Register() {
     const handleOnSubmit = (e) => {
         e.preventDefault();
         localStorage.setItem("user", JSON.stringify(data));
-        navigate("/");
+        navigate("dog_shop/");
     };
 
 
