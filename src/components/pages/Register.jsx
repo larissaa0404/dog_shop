@@ -39,13 +39,13 @@ export default function Register() {
                                 <input type="text" className="form-control rounded-4" id="floatingInput"  name="name" value={data.name} onChange={(e) => setData({...data, [e.target.name]: e.target.value})} placeholder="Full Name" />
                             </div>
                             <div className="form-floating mb-3">
-                                <input type="email" className="form-control rounded-4" id="floatingInput"  name="email" value={data.name} onChange={(e) => setData({...data, [e.target.name]: e.target.value})} placeholder="Email address" />
+                                <input type="email" className="form-control rounded-4" id="floatingInput"  name="email" value={data.email} onChange={(e) => setData({...data, [e.target.name]: e.target.value})} placeholder="Email address" />
                             </div>
                             <div className="form-floating mb-3">
-                                <input type="password" className="form-control rounded-4" id="floatingPassword"  name="password" value={data.name} onChange={(e) => setData({...data, [e.target.name]: e.target.value})} placeholder="Password" />
+                                <input type="password" className="form-control rounded-4" id="floatingPassword"  name="password" value={data.password} onChange={(e) => setData({...data, [e.target.name]: e.target.value})} placeholder="Password" />
                             </div>
                             <div className="form-floating mb-3">
-                                <input type="password" className="form-control rounded-4" id="floatingInput"  name="passwordConfirm" value={data.name} onChange={(e) => setData({...data, [e.target.name]: e.target.value})} placeholder="Password Confirm" />
+                                <input type="password" className="form-control rounded-4" id="floatingInput"  name="passwordConfirm" value={data.passwordConfirm} onChange={(e) => setData({...data, [e.target.name]: e.target.value})} placeholder="Password Confirm" />
                             </div>
                             <button className="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Register</button>
                         
