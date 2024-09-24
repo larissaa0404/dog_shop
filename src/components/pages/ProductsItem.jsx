@@ -19,7 +19,7 @@ const ProductsItem = (props) => {
       if(login) {
         addToCart(id);
       } else {
-        navigate("/login");
+        navigate("dog_shop/login");
       }
   }
     
