@@ -21,21 +21,21 @@ export default function Login() {
 
         if (!userData) {
             alert("Please Register First!");
-            navigate('/register');
+            navigate('dog_shop/register');
         }
 
         if (userData.email === data.email) { 
             if (userData.password === data.password) {
                 alert(userData.name + " You Are Successfully Logged In");
                 window.localStorage.setItem("isLogedin", true);
-                navigate("/");
+                navigate("dog_shop/");
             } else {
                 alert("Email or Password is incorrect");
-                navigate("/login");
+                navigate("dog_shop/login");
             }
         } else {
             alert("Email or Password is incorrect");
-            navigate("/login");
+            navigate("dog_shop/login");
         }
     };
 
@@ -64,7 +64,7 @@ export default function Login() {
             
                             </div>
                             <button className="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
-                            <small className="text-muted mt-3">If you don't have an account, please <Link to="/register">Register here</Link>.</small> 
+                            <small className="text-muted mt-3">If you don't have an account, please <Link to="dog_shop/register">Register here</Link>.</small> 
                         </form>
                     </div>
                 </div>
